@@ -1,0 +1,210 @@
+body {
+    background-color: #282828;
+    color: #FFF;
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 2px solid #282828;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu .item a {
+    padding: 20px;
+    color: #E8E8E8;
+    font-weight: bolder;
+    font-family: 'Chalet', sans-serif;
+}
+
+.cabecalho .menu .item a:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+.home {
+    background-color: aqua;
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(0,0,0, .85), rgb(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    background-size: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.home .informacoes img {
+    max-width: 150px;
+}
+
+.home .informacoes .lista-de-jogos {
+    display: flex;
+    gap: 32px;
+}
+
+.btn-comprar, .btn-plataforma {
+    background-color: rgb(255, 255, 255, .1);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #FFF;
+    width: 50%;
+}
+
+.home .informacoes .btn-comprar:hover {
+    transform: scale(1.1);
+}
+
+.compre-ja {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.compre-ja .titulo {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.compre-ja .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 10px;
+    width: 50%;
+    padding: 80px;
+    gap: 40px;
+}
+
+.compre-ja .cartao .capa-do-jogo {
+    width: 270px;
+}
+
+.compre-ja .cartao .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compre-ja .cartao .informacoes h3 {
+    font-size: 32px;
+}
+
+.compre-ja .cartao .informacoes p {
+    color: #E8E8E8;
+}
+
+.btn-plataforma {
+    color: #FFF;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.compre-ja .cartao .informacoes .plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.compre-ja .cartao .btn-plataforma .plataformas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+    display: none;
+    opacity: 0;
+}
+
+.compre-ja .cartao .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+
+.compre-ja .cartao .btn-plataforma .plataformas li {
+    padding: 20px;
+}
+
+.compre-ja  .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+ }
+ 
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color: #00439c;
+ }
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+ }
+ 
+ .compre-ja  .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color: #387a26;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #387a26; 
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+ }
+ .compre-ja .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #fcaf17; 
+ }
+ 
+ .compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #fcaf17;
+ }
+
+ 
